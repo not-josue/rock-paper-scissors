@@ -1,0 +1,96 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.hero {
+    margin-top: 1rem;
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+h1 {
+    color: crimson;
+    font-size: 2rem;
+}
+
+.rules {
+    padding: 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+/* Override */
+li {
+    text-align: left;
+}
+
+/* Buttons */
+button {
+    height: 40px;
+    width: 100px;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+
+button[data-value="rock"]:not(:disabled) {
+    background: rgb(255, 236, 158);
+}
+
+button[data-value="paper"]:not(:disabled) {
+    background: rgb(255, 187, 112);
+    color: white;
+}
+
+button[data-value="scissors"]:not(:disabled) {
+    background: rgb(237, 148, 85);
+    color: white;
+}
+
+button.start {
+    background: lightgreen;
+}
+
+button.reset:not(:disabled) {
+    background: crimson;
+    color: white;
+}
+
+button:hover:not(:disabled) {
+    cursor: pointer;
+    transform: scale(1.05);
+    background: cornflowerblue;
+    color: white;
+}
+
+.options,
+.selection {
+    display: flex;
+    column-gap: 8px;
+}
+
+.standings {
+    font-weight: bold;
+    padding: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+footer {
+    text-align: center;
+    margin: 2rem 4rem;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <section class="hero">
+
+        <header>
+            <h1>Rock, Paper, Scissors</h1>
+        </header>
+
+        <div class="rules">
+            <h2>Rules</h2>
+            <ol>
+                <li>5 points = 1 win or loss</li>
+                <li>Rock <span><i class="fa-regular fa-hand-back-fist"></i></span> beats Scissors <span><i
+                            class="fa-regular fa-hand-scissors"></i></span></li>
+                <li>Paper <span><i class="fa-regular fa-hand"></i></span> beats Rock <span><i
+                            class="fa-regular fa-hand-back-fist"></i></span></li>
+                <li>Scissors <span><i class="fa-regular fa-hand-scissors"></i></span> beats Paper <span><i
+                            class="fa-regular fa-hand"></i></span></li>
+                <li><strong>Invalid</strong> input results in automatic loss</li>
+            </ol>
+        </div>
+
+        <div class="selection">
+            <button data-value="rock" disabled>Rock</button>
+            <button data-value="paper" disabled>Paper</button>
+            <button data-value="scissors" disabled>Scissors</button>
+        </div>
+
+        <div class="options">
+            <button class="start">Play Round</button>
+            <button class="reset" disabled>Reset</button>
+        </div>
+
+        <div class="standings">
+            <p>Round result: <span id="prevRound">No rounds played...</span></p>
+            <p>Rounds played: <span id="round">0</span></p>
+            <p>User Score: <span id="userScore">0</span></p>
+            <p>Computer Score: <span id="compScore">0</span></p>
+            <p>Wins: <span id="wins">0</span></p>
+            <p>Losses: <span id="losses">0</span></p>
+            <p>Draws: <span id="draws">0</span></p>
+        </div>
+
+    </section>
+
+    <footer>
+        This page is one of the practice projects for the <a href="https://www.theodinproject.com/" target="_blank"
+            rel="noopener">Odin Project</a> curriculum.
+        To try this yourself, go to the Rock, Paper, Scissors project <a
+            href="https://www.theodinproject.com/lessons/foundations-rock-paper-scissors" target="_blank"
+            rel="noopener">page</a>.
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
